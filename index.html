@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissor, Spock or Lizard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&family=Rakkas&display=swap" rel="stylesheet">
+    <!-- Font Awesone -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1 class="header__title">Rock, Paper, Scissor, Spock or Lizard!</h1>
+    </header>
+    <main>
+        <section class="main__user-cpu--container">
+            <div class="main__user--details">
+                <i id="user" class="fas"></i>
+                <p class="main__user--win-count"></p>
+            </div>
+            <span class="main__versus">VS</span>
+            <div class="main__cpu--details">
+                <i id="cpu" class="fas"></i>
+                <p class="main__cpu--win-count"></p>
+            </div>
+        </section>
+        <section class="main__choose-section--container">
+            <div class="main__choose-section--options">
+                <i id="piedra" class="fas fa-hand-rock" onclick="enClic(1)"></i>
+                <i id="papel" class="fas fa-hand-paper" onclick="enClic(2)"></i>
+                <i id="tijeras" class="fas fa-hand-scissors" onclick="enClic(3)"></i>
+            </div>
+            <div class="main__choose-section--options">
+                <i id="spock" class="fas fa-hand-spock" onclick="enClic(4)"></i>
+                <i id="lizard" class="fas fa-hand-lizard" onclick="enClic(5)"></i>
+            </div>
+            <p class="main__choose-section--suggestion">Choose One!</p>
+        </section>
+        <div class="main__buttom--container">
+            <input id="boton" class="main__buttom" type="button" value="Begin">
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><i class="fab fa-github"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-twitch"></i></li>
+            <li><i class="fab fa-discord"></i></li>
+        </ul>
+    </footer> 
+    <script src="codigo.js"></script>   
+</body>
+</html>
